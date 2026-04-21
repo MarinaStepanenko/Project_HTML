@@ -1,0 +1,158 @@
+html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чёрное меню</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .sidebar-dark {
+            background-color: #000000;
+            min-height: 100vh;
+        }
+        .sidebar-dark .list-group-item {
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            border-radius: 0;
+        }
+        .sidebar-dark .list-group-item:hover {
+            background-color: #333333;
+            color: #ffffff;
+        }
+        .sidebar-dark .list-group-item.active {
+            background-color: #0d6efd;
+            color: #ffffff;
+        }
+        .sidebar-dark .list-group-item i {
+            font-size: 1.2rem;
+            width: 1.5rem;
+        }
+        .dropdown-toggle::after {
+            margin-left: auto;
+        }
+        .card {
+            height: 100%;
+        }
+        .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- ЧЁРНАЯ КОЛОНКА С МЕНЮ -->
+        <div class="col-md-3 col-lg-2 sidebar-dark p-0 d-flex flex-column">
+
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item d-flex align-items-center py-3">
+                    <i class="bi bi-house-door me-3"></i> Главная
+                </a>
+                <a href="#" class="list-group-item d-flex align-items-center py-3">
+                    <i class="bi bi-tags me-3"></i> Категории
+                </a>
+                <a href="#" class="list-group-item d-flex align-items-center py-3">
+                    <i class="bi bi-bag-check me-3"></i> Заказы
+                </a>
+                <a href="#" class="list-group-item d-flex align-items-center py-3">
+                    <i class="bi bi-envelope me-3"></i> Контакты
+                </a>
+            </div>
+
+            <div class="mt-auto">
+                <hr class="text-secondary mx-3">
+                <div class="dropdown">
+                    <a href="#" class="list-group-item d-flex align-items-center py-3 dropdown-toggle"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle me-3"></i> Пользователь
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark w-100">
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i> Профиль</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i> Выход</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ОСНОВНОЙ КОНТЕНТ -->
+        <div class="col-md-9 col-lg-10 p-4">
+            <h1>Каталог</h1>
+
+
+            <!-- ПЕРВЫЙ РЯД: 2 карточки (ТВОЙ КОД) -->
+            <div class="cards-container">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ВТОРОЙ РЯД: 2 карточки (ТВОЙ КОД) -->
+            <div class="cards-container" style="margin-top: 24px;">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
